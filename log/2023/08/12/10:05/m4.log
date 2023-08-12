@@ -1,0 +1,107 @@
+make  install-recursive
+make[1]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19'
+Making install in .
+make[2]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19'
+make[3]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19'
+make[2]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19'
+Making install in examples
+make[2]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/examples'
+make[3]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/examples'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/examples'
+make[2]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/examples'
+Making install in lib
+make[2]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/lib'
+make  install-am
+make[3]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/lib'
+make[4]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/lib'
+make[4]: Nothing to be done for 'install-exec-am'.
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/lib'
+make[3]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/lib'
+make[2]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/lib'
+Making install in src
+make[2]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/src'
+make[3]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/src'
+ /usr/bin/mkdir -p '/home/ayush/project/os/usr/bin'
+  /usr/bin/install -c m4 '/home/ayush/project/os/usr/bin'
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/src'
+make[2]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/src'
+Making install in doc
+make[2]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/doc'
+make[3]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/doc'
+make[3]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/home/ayush/project/os/usr/share/info'
+ /usr/bin/install -c -m 644 ./m4.info ./m4.info-1 ./m4.info-2 '/home/ayush/project/os/usr/share/info'
+ install-info --info-dir='/home/ayush/project/os/usr/share/info' '/home/ayush/project/os/usr/share/info/m4.info'
+ /usr/bin/mkdir -p '/home/ayush/project/os/usr/share/man/man1'
+ /usr/bin/install -c -m 644 ./m4.1 '/home/ayush/project/os/usr/share/man/man1'
+make[3]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/doc'
+make[2]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/doc'
+Making install in checks
+make[2]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/checks'
+make[3]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/checks'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/checks'
+make[2]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/checks'
+Making install in po
+make[2]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/po'
+installing bg.gmo as /home/ayush/project/os/usr/share/locale/bg/LC_MESSAGES/m4.mo
+installing cs.gmo as /home/ayush/project/os/usr/share/locale/cs/LC_MESSAGES/m4.mo
+installing da.gmo as /home/ayush/project/os/usr/share/locale/da/LC_MESSAGES/m4.mo
+installing de.gmo as /home/ayush/project/os/usr/share/locale/de/LC_MESSAGES/m4.mo
+installing el.gmo as /home/ayush/project/os/usr/share/locale/el/LC_MESSAGES/m4.mo
+installing eo.gmo as /home/ayush/project/os/usr/share/locale/eo/LC_MESSAGES/m4.mo
+installing es.gmo as /home/ayush/project/os/usr/share/locale/es/LC_MESSAGES/m4.mo
+installing fi.gmo as /home/ayush/project/os/usr/share/locale/fi/LC_MESSAGES/m4.mo
+installing fr.gmo as /home/ayush/project/os/usr/share/locale/fr/LC_MESSAGES/m4.mo
+installing ga.gmo as /home/ayush/project/os/usr/share/locale/ga/LC_MESSAGES/m4.mo
+installing gl.gmo as /home/ayush/project/os/usr/share/locale/gl/LC_MESSAGES/m4.mo
+installing hr.gmo as /home/ayush/project/os/usr/share/locale/hr/LC_MESSAGES/m4.mo
+installing id.gmo as /home/ayush/project/os/usr/share/locale/id/LC_MESSAGES/m4.mo
+installing ja.gmo as /home/ayush/project/os/usr/share/locale/ja/LC_MESSAGES/m4.mo
+installing ko.gmo as /home/ayush/project/os/usr/share/locale/ko/LC_MESSAGES/m4.mo
+installing nl.gmo as /home/ayush/project/os/usr/share/locale/nl/LC_MESSAGES/m4.mo
+installing pl.gmo as /home/ayush/project/os/usr/share/locale/pl/LC_MESSAGES/m4.mo
+installing pt_BR.gmo as /home/ayush/project/os/usr/share/locale/pt_BR/LC_MESSAGES/m4.mo
+installing ro.gmo as /home/ayush/project/os/usr/share/locale/ro/LC_MESSAGES/m4.mo
+installing ru.gmo as /home/ayush/project/os/usr/share/locale/ru/LC_MESSAGES/m4.mo
+installing sr.gmo as /home/ayush/project/os/usr/share/locale/sr/LC_MESSAGES/m4.mo
+installing sv.gmo as /home/ayush/project/os/usr/share/locale/sv/LC_MESSAGES/m4.mo
+installing uk.gmo as /home/ayush/project/os/usr/share/locale/uk/LC_MESSAGES/m4.mo
+installing vi.gmo as /home/ayush/project/os/usr/share/locale/vi/LC_MESSAGES/m4.mo
+installing zh_CN.gmo as /home/ayush/project/os/usr/share/locale/zh_CN/LC_MESSAGES/m4.mo
+installing zh_TW.gmo as /home/ayush/project/os/usr/share/locale/zh_TW/LC_MESSAGES/m4.mo
+if test "m4" = "gettext-tools"; then \
+  /usr/bin/mkdir -p /home/ayush/project/os/usr/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+    /usr/bin/install -c -m 644 ./$file \
+		    /home/ayush/project/os/usr/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /home/ayush/project/os/usr/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[2]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/po'
+Making install in tests
+make[2]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/tests'
+make  install-recursive
+make[3]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/tests'
+Making install in .
+make[4]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/tests'
+make[5]: Entering directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/tests'
+make[5]: Nothing to be done for 'install-exec-am'.
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/tests'
+make[4]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/tests'
+make[3]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/tests'
+make[2]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19/tests'
+make[1]: Leaving directory '/home/ayush/project/os/sources/compiling_area/m4/m4-1.4.19'
