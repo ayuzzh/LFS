@@ -53,11 +53,11 @@ else
 			--without-debug \
 			--without-ada \
 			--disable-stripping \
-			--enable-widec |& tee -a $LFS/../log/$NOW/ncurses4.log
+			--enable-widec |& tee -a $LFS/../log/$NOW/ncurses.log
 
 
         make |& tee -a $LFS/../log/$NOW/ncurses.log
-		make DESTDIR=$LFS TIC_PATH=$(pwd)/build/progs/tic install |& tee -a $LFS/../log/$NOW/ncurses4.log
+		make DESTDIR=$LFS TIC_PATH=$(pwd)/build/progs/tic install |& tee -a $LFS/../log/$NOW/ncurses.log
 		echo "INPUT(-lncursesw)" > $LFS/usr/lib/libncurses.so
 	popd
 fi
