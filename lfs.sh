@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export LFS=/home/lfs/project/os
+export LFS=/home/lfs/project-lfs/lfs
 export LFS_TGT=x86_64-lfs-linux-gnu
 
 export MAKEFLAGS='j1'

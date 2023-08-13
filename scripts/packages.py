@@ -1,8 +1,8 @@
 
-import requests, os, tarfile
+import requests, os
 
 
-packages_list_xz = {
+packages_list = {
 "Acl" : "https://download.savannah.gnu.org/releases/acl/acl-2.3.1.tar.xz",
 "Autoconf" : "https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz",
 "Automake" : "https://ftp.gnu.org/gnu/automake/automake-1.16.5.tar.xz",
@@ -47,10 +47,8 @@ packages_list_xz = {
 "Util-linux" : "https://www.kernel.org/pub/linux/utils/util-linux/v2.38/util-linux-2.38.1.tar.xz",
 "Vim" : "https://anduin.linuxfromscratch.org/LFS/vim-9.0.1273.tar.xz",
 "Xz Utils" : "https://tukaani.org/xz/xz-5.4.1.tar.xz",
-"Zlib" : "https://zlib.net/zlib-1.2.13.tar.xz"
-}
+"Zlib" : "https://zlib.net/zlib-1.2.13.tar.xz",
 
-packages_list_gz = {
 "Attr" :"https://download.savannah.gnu.org/releases/attr/attr-2.5.1.tar.gz",
 "Bash" : "https://ftp.gnu.org/gnu/bash/bash-5.2.15.tar.gz",
 "Bzip2" : "https://www.sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
@@ -83,16 +81,12 @@ packages_list_gz = {
 "Time Zone Data" : "https://www.iana.org/time-zones/repository/releases/tzdata2022g.tar.gz",
 "Wheel" : "https://pypi.org/packages/source/w/wheel/wheel-0.38.4.tar.gz",
 "XML::Parser" : "https://cpan.metacpan.org/authors/id/T/TO/TODDR/XML-Parser-2.46.tar.gz",
-"Zstd" : "https://github.com/facebook/zstd/releases/download/v1.5.4/zstd-1.5.4.tar.gz"
-}
+"Zstd" : "https://github.com/facebook/zstd/releases/download/v1.5.4/zstd-1.5.4.tar.gz",
 
-packages_list_bz2 = {
 "Python Documentation" : "https://www.python.org/ftp/python/doc/3.11.2/python-3.11.2-docs-html.tar.bz2",
 "Elfutils" : "https://sourceware.org/ftp/elfutils/0.188/elfutils-0.188.tar.bz2"
 }
 
-packages_list = {}
-packages_list = packages_list_xz | packages_list_gz | packages_list_bz2
 
 patches_list = {
 "Bzip2" : "https://www.linuxfromscratch.org/patches/lfs/11.3/bzip2-1.0.8-install_docs-1.patch",
@@ -111,12 +105,23 @@ patches_list = {
 for i in packages_list:
 	package = (packages_list[i])
 	package_file_name = os.path.basename(package[6:])
-	if not os.path.isfile("os/sources/packages/" + package_file_name):
+	if not os.path.isfile("lfs/sources/packages/" + package_file_name):
 		print("[Downloading] " + package_file_name)
 		response = requests.get(package, stream=True)
-		with open("os/sources/packages/" + package_file_name, "wb") as out_file:
+		with open("lfs/sources/packages/" + package_file_name, "wb") as out_file:
 			out_file.write(response.content)
 
 print("All packages have been downloaded.")
+
+for i in patches_list:
+	patch = (patches_list[i])
+	patch_file_name = os.path.basename(patch[6:])
+	if not os.path.isfile("lfs/sources/patches/" + patch_file_name):
+		print("[Downloading] " + patch_file_name)
+		response = requests.get(patch, stream=True)
+		with open("lfs/sources/patches/" + patch_file_name, "wb") as out_file:
+			out_file.write(response.content)
+
+print("All patches have been downloaded.")
 
 
