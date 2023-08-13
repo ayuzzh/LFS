@@ -12,8 +12,8 @@ mkdir -pv $LFS
 mkdir -pv $LFS/../log/$NOW
 
 # Preliminary scripts for setting up build disk and file system
-source $SCRIPTS/build_preparations/setup_build_disk.sh
-source $SCRIPTS/build_preparations/setup_file_system.sh
+source $SCRIPTS/build_preparation/setup_build_disk.sh
+source $SCRIPTS/build_preparation/setup_file_system.sh
 
 # Downloading source packages and patches
 python3 $SCRIPTS/packages.py
@@ -28,8 +28,9 @@ source $SCRIPTS/cross_tool_chain/libstdc++.sh |& tee $LFS/../log/$NOW/libstdc++.
 # Compiling packages using already compiled tool chain
 source $SCRIPTS/temporary_tools/m4.sh |& tee $LFS/../log/$NOW/binutils.log
 source $SCRIPTS/temporary_tools/ncurses.sh |& tee $LFS/../log/$NOW/binutils.log
+source $SCRIPTS/temporary_tools/bash.sh |& tee $LFS/../log/$NOW/bash.log
 
 
 
-source $SCRIPTS/build_preparations/unmount_build_disk.sh
+source $SCRIPTS/build_preparation/unmount_build_disk.sh
 
