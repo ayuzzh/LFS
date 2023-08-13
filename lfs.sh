@@ -29,6 +29,19 @@ source $SCRIPTS/cross_tool_chain/libstdc++.sh |& tee $LFS/../log/$NOW/libstdc++.
 source $SCRIPTS/temporary_tools/m4.sh |& tee $LFS/../log/$NOW/binutils.log
 source $SCRIPTS/temporary_tools/ncurses.sh |& tee $LFS/../log/$NOW/binutils.log
 source $SCRIPTS/temporary_tools/bash.sh |& tee $LFS/../log/$NOW/bash.log
+source $SCRIPTS/temporary_tools/coreutils.sh |& tee $LFS/../log/$NOW/coreutils.log
+source $SCRIPTS/temporary_tools/diffutils.sh |& tee $LFS/../log/$NOW/diffutils.log
+source $SCRIPTS/temporary_tools/findutils.sh |& tee $LFS/../log/$NOW/findutils.log
+source $SCRIPTS/temporary_tools/file.sh |& tee $LFS/../log/$NOW/file.log
+source $SCRIPTS/temporary_tools/gawk.sh |& tee $LFS/../log/$NOW/gawk.log
+source $SCRIPTS/temporary_tools/grep.sh |& tee $LFS/../log/$NOW/grep.log
+source $SCRIPTS/temporary_tools/gzip.sh |& tee $LFS/../log/$NOW/gzip.log
+source $SCRIPTS/temporary_tools/make.sh |& tee $LFS/../log/$NOW/make.log
+source $SCRIPTS/temporary_tools/sed.sh |& tee $LFS/../log/$NOW/sed.log
+source $SCRIPTS/temporary_tools/tar.sh |& tee $LFS/../log/$NOW/tar.log
+source $SCRIPTS/temporary_tools/tar.sh |& tee $LFS/../log/$NOW/tar.log
+source $SCRIPTS/temporary_tools/xz.sh |& tee $LFS/../log/$NOW/xz.log
+source $SCRIPTS/temporary_tools/patch.sh |& tee $LFS/../log/$NOW/patch.log
 
 
 

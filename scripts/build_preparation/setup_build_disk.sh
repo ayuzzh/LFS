@@ -12,8 +12,6 @@ FORMAT_DISK () {
 sudo losetup /dev/loop20 $LFS/../os_boot.loop
 sudo losetup /dev/loop21 $LFS/../os_root.loop
 
-mkdir -p os
-
 while true; do
 	read -p "Do you want to formate the Build Drive?" yn
 	case $yn in
