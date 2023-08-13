@@ -16,3 +16,4 @@
 *.loop
 os/*
 log/*
+lfs/*
