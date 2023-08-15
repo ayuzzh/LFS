@@ -42,6 +42,8 @@ source $SCRIPTS/temporary_tools/tar.sh |& tee $LFS/../log/$NOW/tar.log
 source $SCRIPTS/temporary_tools/tar.sh |& tee $LFS/../log/$NOW/tar.log
 source $SCRIPTS/temporary_tools/xz.sh |& tee $LFS/../log/$NOW/xz.log
 source $SCRIPTS/temporary_tools/patch.sh |& tee $LFS/../log/$NOW/patch.log
+source $SCRIPTS/temporary_tools/binutils.sh |& tee $LFS/../log/$NOW/binutils-pass2.log
+#source $SCRIPTS/temporary_tools/gcc.sh |& tee $LFS/../log/$NOW/gcc-pass2.log
 
 
 
